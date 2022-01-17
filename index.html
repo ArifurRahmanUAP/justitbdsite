@@ -1,0 +1,108 @@
+<html>
+
+<head>
+    <!-- Wahid Sadique Koly -->
+    <!-- Primary Meta Tags -->
+    <title>Just IT BD</title>
+    <meta name="title" content="Just IT BD">
+    <meta name="description" content="Just IT offers a wide range of custom software development services to help you grow your business and achieve your business goals. We provide complex, world-class software solutions such as custom software, mobile applications, e-commerce websites, web applications and games.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://justitbd.com">
+    <meta property="og:title" content="Just IT BD">
+    <meta property="og:description" content="Just IT offers a wide range of custom software development services to help you grow your business and achieve your business goals. We provide complex, world-class software solutions such as custom software, mobile applications, e-commerce websites, web applications and games.">
+    <meta property="og:image" content="LOGO.svg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="http://justitbd.com">
+    <meta property="twitter:title" content="Just IT BD">
+    <meta property="twitter:description" content="Just IT offers a wide range of custom software development services to help you grow your business and achieve your business goals. We provide complex, world-class software solutions such as custom software, mobile applications, e-commerce websites, web applications and games.">
+    <meta property="twitter:image" content="LOGO.svg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <img id="logo" src="LOGO.png" />
+        <h1>COMING AFTER</h1>
+        <h1 id="comming"></h1>
+    </div>
+    <div id="social">
+        <!-- <div class="button">
+            <div class="icon">
+                <i class="fa fa-instagram"></i>
+            </div>
+            <span>Instagram</span>
+        </div> -->
+
+        <div class="button" onclick="window.open('https://www.facebook.com/JustITBD', '_blank')">
+            <div class="icon">
+                <i class="fa fa-facebook-f"></i>
+            </div>
+            <span>Facebook</span>
+        </div>
+
+        <!-- <div class="button">
+            <div class="icon">
+                <i class="fa fa-twitter"></i>
+            </div>
+            <span>Twitter</span>
+        </div> -->
+
+        <div class="button" onclick="window.open('https://www.linkedin.com/company/justitbd', '_blank')">
+            <div class="icon">
+                <i class="fa fa-linkedin"></i>
+            </div>
+            <span>LinkedIn</span>
+        </div>
+
+        <div class="button" onclick="window.open('https://www.youtube.com/channel/UCBDN_Lh2TD48dAcR_bAlLnA', '_blank')">
+            <div class="icon">
+                <i class="fa fa-youtube"></i>
+            </div>
+            <span>YouTube</span>
+        </div>
+
+        <!-- <div class="button">
+            <div class="icon">
+                <i class="fa fa-github"></i>
+            </div>
+            <span>Github</span>
+        </div> -->
+    </div>
+</body>
+<script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Jan 25, 2022 15:37:25").getTime();
+
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+
+        // Get today's date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Output the result in an element with id="demo"
+        document.getElementById("comming").innerHTML = days + "d " + hours + "h " +
+            minutes + "m " + seconds + "s ";
+
+        // If the count down is over, write some text 
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "SOON";
+        }
+    }, 1000);
+</script>
+
+</html>
